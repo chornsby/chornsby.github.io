@@ -1,6 +1,8 @@
 /*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
+
+Edited by Charlie Hornsby
 *******************************************************************************/
 
 @import url(pygment_trac.css);
@@ -19,7 +21,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -31,7 +33,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
   display: block;
 }
 
@@ -297,6 +299,13 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+#my_photo {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border-radius: 100%;
+}
+
 #project_title {
   margin: 0;
   color: #fff;
@@ -366,6 +375,92 @@ Full-Width Styles
   background: #212121;
 }
 
+/*******************************************************************************
+FlipTiles Styles
+*******************************************************************************/
+
+.container {
+    max-width: 474px;
+    clear: both;
+    margin: auto;
+}
+
+button {
+    font: inherit;
+}
+
+#score-board {
+    text-align: center;
+}
+
+#score-board > * {
+    width: 33.3333%;
+    float: left;
+}
+
+#new-game {
+    margin-top: -2px;
+}
+
+#game-board {
+    height: 474px;
+    width: 474px;
+
+    padding: 4px;
+
+    border-radius: 5px;
+
+    background-color: darkgrey;
+}
+
+.row {
+    float: left;
+    clear: both;
+
+    /* Fix to keep tiles clickable in Chrome and Safari. */
+    -webkit-transform: rotateY(0);
+    -moz-transform:    rotateY(0);
+    -ms-transform:     rotateY(0);
+    -o-transform:      rotateY(0);
+    transform:         rotateY(0);
+}
+
+.tile {
+    float: left;
+
+    height: 150px;
+    width: 150px;
+
+    margin: 4px;
+
+    border-radius: 5px;
+
+    background-color: whitesmoke;
+
+    cursor: pointer;
+
+    /* Control flipping and highlighting transitions. */
+    -webkit-transition: .4s -webkit-transform, .4s background-color, 0s box-shadow;
+    -moz-transition:    .4s -moz-transform,    .4s background-color, 0s box-shadow;
+    -o-transition:      .4s -o-transform,      .4s background-color, 0s box-shadow;
+    transition:         .4s transform,         .4s background-color, 0s box-shadow;
+}
+
+.tile:hover {
+    box-shadow: 0 0 5px white;
+}
+
+.marked {
+    background-color: grey;
+
+    /* Card flipping transformation. */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform:    rotateY(180deg);
+    -ms-transform:     rotateY(180deg);
+    -o-transform:      rotateY(180deg);
+    transform:         rotateY(180deg);
+}
+
 
 
 /*******************************************************************************
@@ -419,5 +514,7 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
+
+
 
 }
