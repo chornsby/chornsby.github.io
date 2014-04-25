@@ -380,7 +380,6 @@ FlipTiles Styles
 *******************************************************************************/
 
 .container {
-    max-width: 474px;
     clear: both;
     margin: auto;
 }
@@ -390,6 +389,7 @@ button {
 }
 
 #score-board {
+    width: 474px;
     text-align: center;
 }
 
@@ -459,6 +459,14 @@ button {
     -ms-transform:     rotateY(180deg);
     -o-transform:      rotateY(180deg);
     transform:         rotateY(180deg);
+}
+
+/*******************************************************************************
+Roman Numeral Converter Styles
+*******************************************************************************/
+
+input {
+    font: inherit;
 }
 
 
