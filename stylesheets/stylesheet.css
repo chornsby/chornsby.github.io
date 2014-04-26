@@ -470,7 +470,17 @@ input {
     font: inherit;
 }
 
+#numeral-converter {
+    width: 474px;
+    margin: auto;
+    text-align: center;
+}
 
+#numeral-converter > * {
+    width: 33%;
+    display: block;
+    margin: auto;
+}
 
 /*******************************************************************************
 Small Device Styles
