@@ -471,7 +471,7 @@ input {
 }
 
 #numeral-converter {
-    width: 474px;
+    width: 482px;
     margin: auto;
     text-align: center;
 }
@@ -480,6 +480,50 @@ input {
     width: 33%;
     display: block;
     margin: auto;
+}
+
+/*******************************************************************************
+Colourful Bubbles Styles
+*******************************************************************************/
+
+#bubbles-board {
+    clear: both;
+    margin: auto;
+    width: 482px;
+    height: 482px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.full-container {
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.bubbles-row {
+    height: 50%;
+    width: 100%;
+}
+
+.bubble {
+    float: left;
+    height: 100%;
+    width: 50%;
+
+    border-radius: 50%;
+
+    background-color: indigo;
+}
+
+.old-bubble {
+    float: left;
+    height: 100%;
+    width: 50%;
+
+    border-radius: 50%;
+
+    background-color: #f2f2f2;
 }
 
 /*******************************************************************************
