@@ -65,6 +65,7 @@ $(document).ready(function() {
     var $tile = $('.tile');
 
     $tile.eq(randomTile(size)).addClass('marked');
+    $tile.eq(randomTile(size)).addClass('marked');
 
     var movesMade = 0;
 
@@ -77,6 +78,7 @@ $(document).ready(function() {
         $movesMade.text('Moves made: 0');
         $won.empty();
 
+        $tile.eq(randomTile(size)).addClass('marked');
         $tile.eq(randomTile(size)).addClass('marked');
     });
 
