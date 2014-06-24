@@ -4,14 +4,8 @@
 <head>
     <meta charset='utf-8'/>
     <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <meta name="description" content="Chornsby's Corner : Find out more"/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="javascripts/fliptiles.js"></script>
-    <script type="text/javascript" src="javascripts/converter.js"></script>
-    <script type="text/javascript" src="javascripts/colourfulbubbles.js"></script>
     <title>Charlie Hornsby</title>
 </head>
 
@@ -24,7 +18,7 @@
 
         <h1 id="project_title">Charlie Hornsby</h1>
 
-        <h2 id="project_tagline"><a href="https://twitter.com/chornsbyii">@chornsbyii</a><br>
+        <h2 id="project_tagline">Computational Chemistry Graduate<br>
         <a href="mailto:charlie.hornsby@hotmail.co.uk">charlie.hornsby@hotmail.co.uk</a></h2>
 
         <img id="my_photo" src="images/ChornsbyPhoto.jpg"/>
@@ -37,17 +31,22 @@
     <section id="main_content" class="inner">
         <h3>About me</h3>
 
-        <p>I am a Computational Chemistry student at the University of Oxford. I have programmed for three years and my
-           current project is <a href="https://github.com/chornsby/PyNonbonded">PyNonbonded</a>: a modular Python program
-           (~ 5000 lines) to compute binding energies between organic molecules.</p>
+        <p>I am a Computational Chemistry student at the University of Oxford, graduating in July 2014. I have three years
+        experience in programming both for my Masters project and in my free time. My main expertise is in the Python
+        programming language though I am also familiar with Java and web development using HTML, CSS, JavaScript and jQuery.</p>
 
-        <p>I also have experience with Java OOP and web development using HTML, CSS and JavaScript.</p>
+        <h3>PyNonbonded</h3>
+
+        <p>My most recent project was completed for my Masters thesis in Computational Chemistry. The project sought to
+        describe forces between molecules using a forcefield-style set of empirical potentials. The source code is available
+        from the <a href="https://github.com/chornsby/PyNonbonded">GitHub repository</a> and we also deployed a version to
+        the cloud using Google App Engine which is hosted <a href="http://pynonbonded.appspot.com">here</a>.</p>
 
         <h3>FlipTiles</h3>
 
         <p>Inspired by <a href="https://github.com/gabrielecirulli" class="user-mention">@gabrielecirulli</a>'s
-           popular <a href="http://gabrielecirulli.github.io/2048/">tile-based game</a>, this showcases an interactive
-           tile flipping puzzle that I created from scratch. Try to set all the tiles to the grey side.
+        popular <a href="http://gabrielecirulli.github.io/2048/">tile-based game</a>, this showcases an interactive
+        tile flipping puzzle that I created from scratch. Try to set all the tiles to the grey side.
         </p>
 
         <div id="score-board" class="container">
@@ -77,13 +76,20 @@
         <h3>Roman Numeral Converter</h3>
 
         <p>A demonstration of input fields that update in real time. Type a natural number below 9999 in the top
-           input field or a Roman Numeral in the bottom field.</p>
+        input field or a Roman Numeral in the bottom field.</p>
 
         <div id="numeral-converter" class="container">
                 <input id="numberIn" type="text">
                 <div>↕</div>
                 <input id="numeralOut" type="text">
         </div>
+
+        <h3>Battle Calculator for Fire Emblem: Sacred Stones</h3>
+
+        <p>More recently I created a browser-based calculator that would simulate the outcome of battles in
+        Nintendo's turn-based strategy game "Fire Emblem". It offers a wide range of customisation in addition
+        to much of the standard data which is stored in the JSON format. The calculator can be found
+        <a href="http://chornsby.github.io/BattleSimulatorFE8/">here</a>.</p>
 
         <h3>Colourful Bubbles</h3>
 
@@ -112,6 +118,11 @@
     </footer>
 </div>
 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="javascripts/fliptiles.js"></script>
+<script type="text/javascript" src="javascripts/converter.js"></script>
+<script type="text/javascript" src="javascripts/colourfulbubbles.js"></script>
 
 </body>
 </html>
