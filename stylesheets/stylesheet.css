@@ -303,7 +303,8 @@ Full-Width Styles
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
 }
 
