@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {{ config.title }} {% if page.title %}| {{ page.title }} {% endif %}
+    </title>
+    <meta name="description" content="{{ config.description }}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:600,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ get_url(path='custom.css') }}" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a
+            title="{{ config.title }}"
+            href="{{ get_url(path='@/_index.md') }}"
+          >
+            {{ config.title }}
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/chornsby">Code</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; Charlie Hornsby {{ now() | date(format="%Y") }} / Built with
+          <a href="https://getzola.org">Zola</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
