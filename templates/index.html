@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="about-me">
+  <h1>
+    <img src="{{ get_url(path='images/snake.png') }}" alt="Snake emoji" />
+    +
+    <img src="{{ get_url(path='images/laptop.png') }}" alt="Laptop emoji" />
+  </h1>
+</div>
+<div>
+  {{ section.content | safe }}
+</div>
+{% endblock %}

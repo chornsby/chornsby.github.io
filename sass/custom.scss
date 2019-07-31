@@ -1,0 +1,104 @@
+$primary: #46c54d;
+$secondary: #303030;
+$page-width: 650px;
+
+$background: #f5f5f5;
+$text: #424242;
+
+$footer-background: #2b303b;
+$footer-text: #c0c5ce;
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.8;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+p {
+  margin: 1.5em 0;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    a {
+      background: $primary;
+      color: $background;
+      font-weight: 600;
+      padding: 5px 10px;
+
+      &:hover {
+        background: $text;
+      }
+    }
+  }
+
+  nav {
+    a {
+      font-weight: 700;
+
+      &:hover {
+        color: $text;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $footer-background;
+  color: $footer-text;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 6rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+main {
+  a:hover {
+    border-bottom: 1px solid $primary;
+  }
+
+  pre {
+    border-radius: 0.25em;
+    padding: 1.25em 1.5em;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $page-width;
+  padding: 0 1rem;
+}
+
+.about-me {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  img {
+    vertical-align: middle;
+  }
+}
