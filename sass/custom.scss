@@ -82,6 +82,10 @@ main {
     border-bottom: 1px solid $primary;
   }
 
+  blockquote {
+    font-style: italic;
+  }
+
   pre {
     border-radius: 0.25em;
     padding: 1.25em 1.5em;
