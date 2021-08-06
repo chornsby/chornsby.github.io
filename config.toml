@@ -1,4 +1,4 @@
-base_url = "https://charlie.hornsby.fi"
+base_url = "https://chornsby.github.io"
 
 title = "Charlie's Corner"
 description = ""
@@ -7,7 +7,5 @@ default_language = "en"
 
 highlight_code = true
 highlight_theme = "base16-ocean-dark"
-
-generate_rss = true
 
 compile_sass = true
