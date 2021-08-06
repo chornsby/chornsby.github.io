@@ -61,15 +61,16 @@ perspective of an author. I learned about how to write a valid `setup.py` file,
 complete with a pytest entrypoint, and use `twine` to upload the built
 distribution to PyPI.
 
-It was also a good opportunity to use [tox][3] and [GitLab CI][4] to run
+It was also a good opportunity to use [tox][3] and [GitHub Actions][4] to run
 automated tests across a variety of Python language versions. At work I have
 only worked with a single version of Python at a time so this was new for me.
 
 Overall I'm happy with how this turned out and that I learned some useful things
 about Python package distribution.
 
-[0]: https://gitlab.com/chornsby/pytest-pikachu
+[0]: https://github.com/chornsby/pytest-pikachu
 [1]: https://pypi.org/project/pytest-pikachu/
 [2]: https://en.meming.world/wiki/Surprised_Pikachu
 [3]: https://pypi.org/project/tox/
-[4]: https://docs.gitlab.com/ee/ci/
+[4]:
+  https://docs.github.com/en/actions/guides/building-and-testing-python#running-tests-with-tox
