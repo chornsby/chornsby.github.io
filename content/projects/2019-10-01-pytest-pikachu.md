@@ -8,7 +8,7 @@ interesting enough to publish.
 
 <!-- more -->
 
-You can find the source code on [GitLab][0] the package on [PyPI][1].
+You can find the source code on [GitHub][0] the package on [PyPI][1].
 
 The most exciting thing for me is that anyone can install the plugin just by
 running
