@@ -1,0 +1,47 @@
+@import "../variables";
+
+#flip-tiles {
+  font-family: $font-family-sans-serif;
+  text-align: center;
+}
+
+#game-board {
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: $footer-background;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: start;
+
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+.tile {
+  background-color: $background;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s transform, 0.4s background-color, 0s box-shadow;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px $background;
+  }
+
+  &.marked {
+    background-color: $primary;
+    transform: rotateY(180deg);
+  }
+}

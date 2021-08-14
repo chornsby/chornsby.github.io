@@ -1,0 +1,26 @@
+<link href="{{ get_url(path='projects/flip-tiles.css') }}" rel="stylesheet" />
+
+<div id="flip-tiles">
+  <div class="grid">
+    <div id="moves-made">Moves: 0</div>
+    <button type="button" id="new-game">Restart</button>
+    <div id="game-state"></div>
+  </div>
+
+  <div id="game-board" class="grid">
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+  </div>
+</div>
+
+<script
+  src="{{ get_url(path='projects/flip-tiles.js') }}"
+  type="application/javascript"
+></script>
