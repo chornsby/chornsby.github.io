@@ -55,12 +55,18 @@
       <div class="container">{% block content %}{% endblock %}</div>
     </main>
     <footer>
-      <div class="container">
-        <p>
-          &copy; Charlie Hornsby {{ now() | date(format="%Y") }} / Built with
-          <a href="https://getzola.org">Zola</a>
-        </p>
-      </div>
+      <p>
+        &copy; Charlie Hornsby {{ now() | date(format="%Y") }} / Built with
+        <a href="https://getzola.org">Zola</a>
+      </p>
+      <p>
+        All emojis designed by
+        <a href="https://openmoji.org/">OpenMoji</a>
+        – the open-source emoji and icon project. License:
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/#">
+          CC BY-SA 4.0
+        </a>
+      </p>
     </footer>
   </body>
 </html>
