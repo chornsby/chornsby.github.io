@@ -90,6 +90,10 @@ main {
     font-style: italic;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   pre {
     border-radius: 0.25em;
     line-height: 1.4;
@@ -109,6 +113,8 @@ main {
   text-align: center;
 
   img {
+    height: 120px;
+    width: 120px;
     vertical-align: middle;
   }
 }
