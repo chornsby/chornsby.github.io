@@ -2,4 +2,6 @@
 for project in section.pages %}
 <h2><a href="{{ project.permalink }}">{{ project.title }}</a></h2>
 <p>{{ project.summary | safe }}</p>
-{% endfor %} {% endblock %}
+{% if not loop.last %}
+<hr />
+{% endif %} {% endfor %} {% endblock %}
