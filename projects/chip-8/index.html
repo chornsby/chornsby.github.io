@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Charlie&#x27;s Corner | Chip-8 
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:600,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://chornsby.github.io/custom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a
+            title="Charlie&#x27;s Corner"
+            href="https://chornsby.github.io/"
+          >
+            Charlie&#x27;s Corner
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://chornsby.github.io/projects/">Projects</a>
+            </li>
+            <li>
+              <a href="https://github.com/chornsby" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/charlie-hornsby/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+<article>
+  <h1 class="title">Chip-8</h1>
+  <p class="subtitle">2020-09-12</p>
+  <p>The Internet recommends the Chip-8 as a first emulation target because of its
+small instruction set, simple graphics and sound, and ease of getting something
+working. I tried this using Rust for my first project that was larger than an
+Advent of Code problem.</p>
+<span id="continue-reading"></span>
+<p><img src="/images/chip-8.png" alt="Chip-8 emulator showing the Cave program splash screen" /></p>
+<p>I decided to try implementing the emulator without looking at other similar
+projects to see if I could figure it out. I worked from <a href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's Technical
+Reference</a> which describes how the interpreter should work and lists the CPU
+instruction set. I also used the <a href="https://en.wikipedia.org/wiki/CHIP-8">Wikipedia article</a> as a reference when
+something didn't make sense.</p>
+<p>It was very convenient being able to use Rust pattern matching to destructure
+the 2-byte instructions and match against different parts of them: the most
+significant bits determine the instruction type and the least significant
+usually determine the registers to operate upon.</p>
+<p>I also decided to go test first by writing the unit tests for the instructions
+before implementing each one. Rust made this easy and pretty simple to run in CI
+as a GitHub Action.</p>
+<p>To begin with I wanted to use the recently released Bevy game engine for the
+graphics and main loop, but this brought with it a lot more dependencies than I
+really needed for this project. In the end I migrated my existing code to use
+<a href="https://www.libsdl.org/">SDL2</a> instead which was more lightweight and appropriate for this kind of
+project.</p>
+<p>You can find the source code on <a href="https://github.com/chornsby/chip-8">GitHub</a>.</p>
+
+</article>
+</div>
+    </main>
+    <footer>
+      <p>
+        &copy; Charlie Hornsby 2021 / Built with
+        <a href="https://getzola.org">Zola</a>
+      </p>
+      <p>
+        All emojis designed by
+        <a href="https://openmoji.org/">OpenMoji</a>
+        – the open-source emoji and icon project. License:
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/#">
+          CC BY-SA 4.0
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

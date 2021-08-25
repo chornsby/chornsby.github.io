@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Charlie&#x27;s Corner | Minecraft Server 
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:600,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://chornsby.github.io/custom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a
+            title="Charlie&#x27;s Corner"
+            href="https://chornsby.github.io/"
+          >
+            Charlie&#x27;s Corner
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://chornsby.github.io/projects/">Projects</a>
+            </li>
+            <li>
+              <a href="https://github.com/chornsby" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/charlie-hornsby/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+<article>
+  <h1 class="title">Minecraft Server</h1>
+  <p class="subtitle">2021-08-25</p>
+  <p>When one of my friends suggested we do something nostalgic, I didn't expect that
+they wanted to play <a href="https://www.minecraft.net/en-us/about-minecraft">Minecraft</a>. I was even more surprised when I found a
+good place to run the server was in <a href="https://www.oracle.com/cloud/">Oracle Cloud</a>.</p>
+<span id="continue-reading"></span>
+<p>Of course with the Autumn weather starting early this year I think they had a
+good point, so I had a go at setting one up. It was easy enough to follow along
+an existing blog post on <a href="https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud#open-firewall-and-security-list-ports-to-allow-public-access">how to deploy a Minecraft: Java Edition server to
+Oracle Cloud</a>, but I wanted to put my recent experience with <a href="https://www.terraform.io/">Terraform</a>
+to good use.</p>
+<p>The result was <a href="https://github.com/chornsby/minecraft-server">a small Terraform project</a> which sets up the needed network
+resources in Oracle cloud and then deploys and (mostly) provisions a Minecraft
+server. I am particularly happy with the awful hack of restricting SSH access to
+only the machine that ran the Terraform script.</p>
+<p>Nice things to improve for the future would be using a proper firewall entry for
+the server ports and a systemd service file to ensure that Minecraft is
+automatically restarted in case of a crash.</p>
+<p>You can find the source code on <a href="https://github.com/chornsby/minecraft-server">GitHub</a>.</p>
+
+</article>
+</div>
+    </main>
+    <footer>
+      <p>
+        &copy; Charlie Hornsby 2021 / Built with
+        <a href="https://getzola.org">Zola</a>
+      </p>
+      <p>
+        All emojis designed by
+        <a href="https://openmoji.org/">OpenMoji</a>
+        – the open-source emoji and icon project. License:
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/#">
+          CC BY-SA 4.0
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

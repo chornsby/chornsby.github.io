@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Charlie&#x27;s Corner | Pytest Pikachu 
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:600,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://chornsby.github.io/custom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a
+            title="Charlie&#x27;s Corner"
+            href="https://chornsby.github.io/"
+          >
+            Charlie&#x27;s Corner
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://chornsby.github.io/projects/">Projects</a>
+            </li>
+            <li>
+              <a href="https://github.com/chornsby" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/charlie-hornsby/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+<article>
+  <h1 class="title">Pytest Pikachu</h1>
+  <p class="subtitle">2019-10-01</p>
+  <p>I wanted to understand the whole process of how a Python package is distributed.
+Building a pytest plugin seemed like a way to build something small but
+interesting enough to publish.</p>
+<span id="continue-reading"></span>
+<p>You can find the source code on <a href="https://github.com/chornsby/pytest-pikachu">GitHub</a> and the package on <a href="https://pypi.org/project/pytest-pikachu/">PyPI</a>.</p>
+<p>The most exciting thing for me is that anyone can install the plugin just by
+running</p>
+<pre><code>pip install pytest-pikachu
+</code></pre>
+<p>which shows how convenient Python package distribution is for people who use the
+packages.</p>
+<p>After installing the plugin you can pass the <code>--pikachu</code> flag and, if all your
+tests pass, you won't be the only one looking surprised.</p>
+<pre><code>$ pytest --pikachu
+============================= test session starts ==============================
+platform linux -- Python 3.7.1, pytest-5.1.3, py-1.8.0, pluggy-0.13.0
+rootdir: /home/.../pytest-pikachu, inifile: tox.ini, testpaths: tests
+plugins: pikachu-0.1.0
+collected 4 items
+
+tests/test_plugin.py ....                                                [100%]
+
+============================== 4 passed in 0.25s ===============================
+
+⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿
+⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿
+⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿
+⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
+</code></pre>
+<p>The actual logic isn't too complicated: it relies on existing hooks within the
+pytest framework which were well-documented. We wait until the end of the
+session and then print out an ASCII art <a href="https://en.meming.world/wiki/Surprised_Pikachu">Surprised Pikachu</a> if the exit code
+shows the tests were successful.</p>
+<p>The interesting bit was dipping my toes into Python packaging from the
+perspective of an author. I learned about how to write a valid <code>setup.py</code> file,
+complete with a pytest entrypoint, and use <code>twine</code> to upload the built
+distribution to PyPI.</p>
+<p>It was also a good opportunity to use <a href="https://pypi.org/project/tox/">tox</a> and <a href="https://docs.github.com/en/actions/guides/building-and-testing-python#running-tests-with-tox">GitHub Actions</a> to run
+automated tests across a variety of Python language versions. At work I have
+only worked with a single version of Python at a time so this was new for me.</p>
+<p>Overall I'm happy with how this turned out and that I learned some useful things
+about Python package distribution.</p>
+
+</article>
+</div>
+    </main>
+    <footer>
+      <p>
+        &copy; Charlie Hornsby 2021 / Built with
+        <a href="https://getzola.org">Zola</a>
+      </p>
+      <p>
+        All emojis designed by
+        <a href="https://openmoji.org/">OpenMoji</a>
+        – the open-source emoji and icon project. License:
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/#">
+          CC BY-SA 4.0
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
